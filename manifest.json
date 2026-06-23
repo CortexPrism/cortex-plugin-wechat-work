@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-wechat-work",
-  "version": "1.0.0",
-  "description": "WeChat Work Integration — Cortex agent as a WeCom bot for China's dominant enterprise messaging platform (300M+ users) with text commands, rich cards, and department-aware routing",
+  "version": "1.0.1",
+  "description": "WeChat Work Integration \u2014 Cortex agent as a WeCom bot for China's dominant enterprise messaging platform (300M+ users) with text commands, rich cards, and department-aware routing",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,7 +9,10 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-wechat-work",
   "homepage": "https://cortexprism.io/marketplace/plugins/wechat-work",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "wework_send_message",
@@ -33,6 +36,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
